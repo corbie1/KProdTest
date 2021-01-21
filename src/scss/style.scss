@@ -8,7 +8,6 @@
 	outline: none;
 }
 body{
-	font-family: 'PT Sans', regular;
 	font-size: 14px;
 }
 img{
@@ -73,6 +72,7 @@ a{
 	position: relative;
 	cursor: pointer;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
 	&__text{
 		font-weight: bold;
 		margin-top: 20px;
@@ -94,7 +94,6 @@ a{
 		}
 	}
 	&:hover{
-		
 		.card__text{
 			color: #3685EE;
 			&::after{
@@ -113,7 +112,7 @@ a{
 			position: absolute;
 			background-color: #fff;
 			border-radius: 50px;
-			background-image: url(../img/Vector.png);
+			background-image: url(../img/Vector.svg);
 			background-repeat: no-repeat;
 			background-position: center;
 			width: 60px;
@@ -158,6 +157,10 @@ a{
 }
 @media screen and (max-width: 321px){
 	.work{
+		&__title{
+			font-size: 28px;
+			line-height: 36px;
+		}
 		&__card{
 			max-width: 100%;
 		}
